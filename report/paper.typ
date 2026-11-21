@@ -2,42 +2,30 @@
 // Compile: typst compile --font-path report/fonts report/paper.typ report/paper.pdf
 #import "@preview/charged-ieee:0.1.4": ieee
 
+// Shared affiliation, written once.
+#let dept = "Department of Software Engineering"
+#let univ = "NED University of Engineering and Technology"
+#let loc = "Karachi, Pakistan"
+#let author(name, roll, email) = (
+  name: name,
+  department: [Roll no. #roll],
+  email: email,
+)
+
 #show: ieee.with(
   title: [
     Speech Emotion Recognition from Audio Recordings: Low-Pass Noise Removal and Classical Spectral Features \
     #v(0.2em)
-    #text(10.5pt)[Machine Learning (SE-317), Complex Engineering Problem \ Instructor: Miss Naveera Sami]
+    #text(10.5pt)[Machine Learning (SE-317), Complex Engineering Problem \ Instructor: Miss Naveera Sami \
+    #v(0.2em)
+    #text(10.5pt, style: "italic")[#dept, #univ, #loc]]
   ],
   abstract: [We build and evaluate a pipeline that recognises six emotions (anger, disgust, fear, happiness, neutral, sadness) from 7,441 acted speech clips of the CREMA-D corpus. Exploratory analysis revealed two data issues that shaped the design: one clip is digital silence, and every clip carries an added 7.5 kHz tone holding about 95% of its energy, which a low-pass filter removes. Clips are split by *actor* (63/14/14) so that the test score measures generalisation to unseen speakers. From each filtered clip we extract 242 spectral features (MFCC, mel-spectrogram, chromagram, spectral centroid/bandwidth/contrast, long-term Fourier spectrum) plus eight bicoherence statistics, and compare five scikit-learn classifiers. The best models, logistic regression and an RBF SVM, reach 0.53–0.54 accuracy and 0.53 macro-F1 on unseen speakers (chance: 0.17), a plausible level for acted speech and classical features. Ablations show that 40 MFCCs carry almost all of the usable signal and that bicoherence adds nothing on top. We also report negative results (the filter cutoff barely changes accuracy; the added tone carries essentially no label information beyond clip loudness) and one unexplained observation, and discuss their limits.],
   authors: (
-    (
-      name: "Muhammad Awwab Khan",
-      department: [Department of Software Engineering \ Roll no. SE-23051],
-      organization: [NED University of Engineering and Technology],
-      location: [Karachi, Pakistan],
-      email: "khan4600966@cloud.neduet.edu.pk",
-    ),
-    (
-      name: "Muhammad Abyaz Khalid",
-      department: [Department of Software Engineering \ Roll no. SE-23053],
-      organization: [NED University of Engineering and Technology],
-      location: [Karachi, Pakistan],
-      email: "khalid4600054@cloud.neduet.edu.pk",
-    ),
-    (
-      name: "Nabeed Jamshed",
-      department: [Department of Software Engineering \ Roll no. SE-23054],
-      organization: [NED University of Engineering and Technology],
-      location: [Karachi, Pakistan],
-      email: "ali4601063@cloud.neduet.edu.pk",
-    ),
-    (
-      name: "Muhammad Talha",
-      department: [Department of Software Engineering \ Roll no. SE-23057],
-      organization: [NED University of Engineering and Technology],
-      location: [Karachi, Pakistan],
-      email: "talha4600894@cloud.neduet.edu.pk",
-    ),
+    author("Muhammad Awwab Khan", "SE-23051", "khan4600966@cloud.neduet.edu.pk"),
+    author("Muhammad Abyaz Khalid", "SE-23053", "khalid4600054@cloud.neduet.edu.pk"),
+    author("Nabeed Jamshed", "SE-23054", "ali4601063@cloud.neduet.edu.pk"),
+    author("Muhammad Talha", "SE-23057", "talha4600894@cloud.neduet.edu.pk"),
   ),
   index-terms: ("Speech emotion recognition", "CREMA-D", "MFCC", "low-pass filtering", "bicoherence", "speaker-independent evaluation"),
   bibliography: bibliography("refs.bib"),
