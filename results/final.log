@@ -1,0 +1,13 @@
+[lp5500+bico] LogReg     val_f1=0.260 test_acc=0.290 test_f1=0.275 {'C': 1}
+[lp5500+bico] SVM        val_f1=0.303 test_acc=0.327 test_f1=0.322 {'C': 100, 'gamma': 'scale'}
+[lp5500] KNN        val_f1=0.437 test_acc=0.477 test_f1=0.462 {'n_neighbors': 31, 'weights': 'uniform'}
+[lp5500] LogReg     val_f1=0.493 test_acc=0.539 test_f1=0.534 {'C': 1}
+[lp5500] NaiveBayes val_f1=0.337 test_acc=0.425 test_f1=0.373 {'var_smoothing': 0.001}
+[lp5500] SVM        val_f1=0.521 test_acc=0.532 test_f1=0.525 {'C': 100, 'gamma': 0.001}
+[lp5500] NeuralNet  val_f1=0.496 test_acc=0.516 test_f1=0.511 {'hidden_layer_sizes': (256, 128), 'alpha': 0.01}
+[lp5500+bico] KNN        val_f1=0.434 test_acc=0.454 test_f1=0.441 {'n_neighbors': 15, 'weights': 'uniform'}
+[lp5500+bico] LogReg     val_f1=0.497 test_acc=0.534 test_f1=0.528 {'C': 0.1}
+[lp5500+bico] NaiveBayes val_f1=0.336 test_acc=0.422 test_f1=0.372 {'var_smoothing': 1e-09}
+[lp5500+bico] SVM        val_f1=0.518 test_acc=0.525 test_f1=0.518 {'C': 10, 'gamma': 'scale'}
+[lp5500+bico] NeuralNet  val_f1=0.497 test_acc=0.516 test_f1=0.512 {'hidden_layer_sizes': (128,), 'alpha': 0.01}
+FINAL_DONE

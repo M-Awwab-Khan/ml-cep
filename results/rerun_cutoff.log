@@ -1,0 +1,13 @@
+/home/awwab/personal/ml-cep/.venv/lib/python3.12/site-packages/librosa/core/pitch.py:104: UserWarning: Trying to estimate tuning from empty frequency set.
+  return pitch_tuning(
+[raw] LogReg     val_f1=0.492 test_acc=0.532 test_f1=0.524 {'C': 0.1}
+[raw] SVM        val_f1=0.518 test_acc=0.519 test_f1=0.513 {'C': 100, 'gamma': 0.001}
+[lp3000] LogReg     val_f1=0.487 test_acc=0.513 test_f1=0.509 {'C': 0.1}
+[lp3000] SVM        val_f1=0.504 test_acc=0.522 test_f1=0.517 {'C': 100, 'gamma': 0.001}
+[lp4000] LogReg     val_f1=0.491 test_acc=0.527 test_f1=0.521 {'C': 0.1}
+[lp4000] SVM        val_f1=0.489 test_acc=0.520 test_f1=0.515 {'C': 100, 'gamma': 0.001}
+[lp5500] LogReg     val_f1=0.493 test_acc=0.539 test_f1=0.534 {'C': 1}
+[lp5500] SVM        val_f1=0.521 test_acc=0.532 test_f1=0.525 {'C': 100, 'gamma': 0.001}
+[lp7000] LogReg     val_f1=0.497 test_acc=0.525 test_f1=0.520 {'C': 0.1}
+[lp7000] SVM        val_f1=0.524 test_acc=0.511 test_f1=0.507 {'C': 100, 'gamma': 0.001}
+RERUN_DONE_cutoff

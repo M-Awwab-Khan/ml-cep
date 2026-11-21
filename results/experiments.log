@@ -1,0 +1,17 @@
+[raw] LogReg     val_f1=0.494 test_acc=0.532 test_f1=0.524 {'C': 0.1}
+[raw] SVM        val_f1=0.517 test_acc=0.518 test_f1=0.512 {'C': 100, 'gamma': 0.001}
+[lp3000] LogReg     val_f1=0.487 test_acc=0.511 test_f1=0.507 {'C': 0.1}
+[lp3000] SVM        val_f1=0.506 test_acc=0.524 test_f1=0.518 {'C': 100, 'gamma': 0.001}
+[lp4000] LogReg     val_f1=0.492 test_acc=0.524 test_f1=0.518 {'C': 0.1}
+[lp4000] SVM        val_f1=0.489 test_acc=0.520 test_f1=0.515 {'C': 100, 'gamma': 0.001}
+[lp5500] LogReg     val_f1=0.495 test_acc=0.536 test_f1=0.532 {'C': 1}
+[lp5500] SVM        val_f1=0.520 test_acc=0.530 test_f1=0.524 {'C': 100, 'gamma': 0.001}
+CUTOFF_DONE
+mfcc [['LogReg', 0.488, 0.476], ['SVM', 0.524, 0.516]]
+mel [['LogReg', 0.463, 0.452], ['SVM', 0.467, 0.461]]
+chroma [['LogReg', 0.327, 0.31], ['SVM', 0.334, 0.325]]
+centroid [['LogReg', 0.335, 0.284], ['SVM', 0.34, 0.302]]
+bandwidth [['LogReg', 0.304, 0.271], ['SVM', 0.31, 0.266]]
+contrast [['LogReg', 0.377, 0.37], ['SVM', 0.408, 0.41]]
+fft [['LogReg', 0.448, 0.428], ['SVM', 0.471, 0.459]]
+ALL_DONE

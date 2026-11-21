@@ -1,0 +1,9 @@
+mfcc [['LogReg', 0.507, 0.501], ['SVM', 0.53, 0.524]]
+mel [['LogReg', 0.461, 0.442], ['SVM', 0.514, 0.507]]
+chroma [['LogReg', 0.324, 0.305], ['SVM', 0.346, 0.338]]
+centroid [['LogReg', 0.323, 0.272], ['SVM', 0.329, 0.288]]
+bandwidth [['LogReg', 0.274, 0.242], ['SVM', 0.296, 0.277]]
+contrast [['LogReg', 0.373, 0.366], ['SVM', 0.415, 0.41]]
+fft [['LogReg', 0.435, 0.407], ['SVM', 0.471, 0.46]]
+bico [['LogReg', 0.29, 0.275], ['SVM', 0.327, 0.322]]
+RERUN_DONE_ablation
